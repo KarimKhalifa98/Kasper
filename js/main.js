@@ -8,13 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     links.style.display = "flex";
   });
 
-  // Hide menu when clicking outside  of the menu
-  document.addEventListener("click", (e) => {
-    if (!toggle.contains(e.target) && !links.contains(e.target)) {
-      links.style.display = "none";
-    }
-  });
-
   // Our Works Filter
   document.querySelectorAll(".filter li").forEach((li) => {
     li.addEventListener("click", function () {

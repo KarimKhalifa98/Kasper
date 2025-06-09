@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Header Links
   let toggle = document.querySelector(".toggle-menu");
-  let links = document.querySelector(".links");
+  let links = document.querySelector(".toggle-menu + ul");
   toggle.addEventListener("click", () => {
     links.classList.toggle("links");
   });

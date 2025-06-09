@@ -156,10 +156,11 @@ header .container nav {
     padding: 0 20px;
     font-size: 20px;
   }
-  header .container nav .links {
+  header .container nav ul {
     display: none;
   }
-  header .container nav ul {
+  header .container nav .links {
+    display: flex;
     flex-direction: column;
     position: absolute;
     top: 100%;

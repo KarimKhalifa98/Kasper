@@ -5,8 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
   let toggle = document.querySelector(".toggle-menu");
   let links = document.querySelector(".links");
   toggle.addEventListener("click", () => {
-    links.style.display = "flex";
+    links.classList.toggle("links");
   });
+
+  // Hide menu when clicking outside  of the menu
+  
 
   // Our Works Filter
   document.querySelectorAll(".filter li").forEach((li) => {
